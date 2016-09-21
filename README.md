@@ -1,2 +1,2 @@
-# angular-requirejs
+# angular-webpack
 sample application using angularjs and webpack
