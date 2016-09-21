@@ -1,2 +1,2 @@
 # angular-requirejs
-sample application using angularjs and requirejs
+sample application using angularjs and webpack
