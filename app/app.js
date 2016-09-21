@@ -1,5 +1,10 @@
 angular.module('dashboard', []);
 
+require('./controllers');
 require('./directives');
 require('./services');
-require('./controllers');
+
+
+angular.element(document).ready(function(){
+    angular.bootstrap(document.body, ['dashboard']);
+});

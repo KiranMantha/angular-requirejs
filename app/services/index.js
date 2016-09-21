@@ -2,4 +2,6 @@
 
 var angular = require('angular');
 
-angular.module('dashboard').service('GithubStatusService', require('./github-status.service'));
+var ngModule = angular.module('dashboard');
+
+require('./github-status.service')(ngModule);

@@ -1,5 +1,5 @@
 'use strict';
 
-var angular = require('angular');
+var ngModule = angular.module('dashboard');
 
-angular.module('dashboard').controller('dashboardController', require('./dashboard.controller'));
+require('./dashboard.controller')(ngModule);

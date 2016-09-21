@@ -1,5 +1,5 @@
 'use strict';
+var ngModule = angular.module('dashboard');
 
-var angular = require('angular');
-
-angular.module('dashboard').directive('yepNope', require('./yep-nope.directive'));
+require('./yep-nope.directive')(ngModule);
+require('./test.directive')(ngModule);

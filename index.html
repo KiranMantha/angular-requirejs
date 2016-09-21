@@ -10,12 +10,10 @@
         <script src="js/app.bundle.js"></script>
         
     </head>
-    <body ng-app="dashboard">
+    <body>
         <div class="container">
         <br />
-        <div ng-controller="dashboardController as ctrl">
-            <div class="alert alert-danger" ng-class="{'alert-danger': !ctrl.github, 'alert-success': ctrl.github}">Is GitHub Up? <yep-nope check="ctrl.github"></yep-nope></div>
-        </div>
+        <test></test>
         </div>
     </body>
 </html>

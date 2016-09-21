@@ -1,12 +1,15 @@
 'use strict';
 
-DashboardController.$inject = ['GithubStatusService'];
-function DashboardController(gh) {
-    var _this = this;
-    _this.github = '';
-    gh.getStatus().success(function(status) {
-        _this.github = status;
-    });
-}
+module.exports = function (ngModule) {
+    function DashboardController(gh) {
+        var _this = this;
+        _this.github = '';
+        gh.getStatus().success(function (status) {
+            _this.github = status;
+        });
+    }
 
-module.exports = DashboardController;
+    DashboardController.$inject = ['GithubStatusService'];
+
+    ngModule.controller('dashboardController', DashboardController);
+}
