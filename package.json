@@ -1,0 +1,13 @@
+{
+  "name": "angular-requirejs",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server.js",
+    "bundle": "webpack"
+  },
+  "dependencies": {
+    "angular": "*",
+    "express": "*",
+    "webpack": "*"
+  }
+}
